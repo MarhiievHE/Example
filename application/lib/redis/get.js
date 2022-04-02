@@ -1,6 +1,6 @@
-(key, value) =>
+(server, port, dbName, key) =>
   new Promise((resolve, reject) => {
-    lib.redis.client.set(key, value, (err, result) => {
+    db.redis[server][port][dbName].get(key, (err, result) => {
       if (err) reject(err);
       else resolve(result);
     });

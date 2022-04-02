@@ -1,4 +1,4 @@
 ({
-  url: 'ws://localhost:8001',
+  url: 'ws://localhost:7001',
   interfaces: ['example'],
 });
